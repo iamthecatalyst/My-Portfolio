@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  /* border: 2px solid red; */
+}
+
+@font-face {
+  font-family: comic;
+  src: url(/fonts/ComicNeue-Bold.ttf);
+}
+
+@font-face {
+  font-family: mont;
+  src: url(/fonts/Montserrat-Bold.ttf);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+  align-items: center;
+  background-color: #33495d;
+  color: #ffffff;
+}
+
+a{
+    display: block;
+    background-color: rgb(180, 37, 37);
+    color: rgb(192, 17, 17);
+    border: 2px solid red;
+}
+
+a:hover {
+  background-color: white;
+  color: #33495d;
+}
+
+nav h1 {
+  font-size: 24px;
+}
+
+ul {
+  display: flex;
+  gap: 2rem;
+  font-family: comic;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+div {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  font-family: mont;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+h1 {
+  margin: 100px;
+}
+
+.btn {
+  padding: 25px 100px;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+  font-family: inherit;
+  font-size: 30px;
+  border: none;
+}

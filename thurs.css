@@ -1,0 +1,149 @@
+@font-face {
+    font-family: mont;
+    src: url(/fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: monts;
+    src: url(/fonts/Montserrat-Bold.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: mont;  
+    text-decoration: none;  
+    list-style: none;
+    /* border: 2px solid red; */
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+}
+
+body{
+    background-color: rgba(192, 186, 186, 0.3);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 90% ;
+    height: 60px;
+    align-items: center ;
+    margin: 0 auto;
+}
+.btn{
+    padding: 5px 30px;
+    background-color: yellow;
+    border-radius: 10px;
+    border: none;
+    font-family: inherit;
+}
+
+.btn1{
+    background-color: orange;
+    padding: 5px 20px;
+    border-radius: 50px;
+}
+
+ul{
+    display: flex;
+    gap: 2rem;
+}
+
+li{
+    font-family: mont;
+    font-weight: 800;
+}
+
+.hero{
+    display: flex;
+    height: 400px;
+    width: 90%;
+    margin: 0 auto;
+    gap: 4rem;
+}
+
+.left{
+    flex-basis: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 0 20px;
+}
+
+.left *{
+    margin: 5px 0;
+}
+
+button{
+    border: none;
+}
+
+.right{
+    flex-basis: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5rem;
+   
+}
+
+span{
+    color: orange;
+}
+
+.photo{
+    width: 80%;
+    height: 350px;
+    /* border: 1px solid red; */
+}
+
+.lower{
+    /* height: 200px; */
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    /* border: 2px solid red; */
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+.lower > *{
+    width: 350px;
+    /* background-color: blue; */
+    /* border: 2px solid blue; */
+    box-shadow: 0 2px 5px grey;
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center;
+    transition: 400ms ease-in-out;
+
+}
+
+.lower>div:hover{
+    box-shadow: none;
+    /* transform: translateY(20px); */
+    background-color: rgb(41, 40, 40);
+    color: #fff;
+
+}
+
+
+
+
+
+.thr{
+    transform: translateY(50%);
+}
+
+

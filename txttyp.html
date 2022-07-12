@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        @font-face {
+            font-family: monts;
+            src: url(/fonts/Montserrat-Regular.ttf);
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: monts;
+        }
+
+        .hero{
+            font-family: monts;
+            font-size: 16px;
+            background-color: #009090;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            text-align: center;
+            justify-content: space-around;
+
+        }
+
+        .text-box{
+            font-size: 80px;
+            font-weight: 900;
+            height: 100px;
+            width: 100%;
+            border: 2px solid red;
+        }
+
+        .fixed-text{
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .animated-text{
+            display: inline-block;
+            height: 113px;
+            overflow: hidden;
+        }
+
+        .animated-text div{
+            animation: 9s wordchange;
+            animation-iteration-count: infinite;
+            animation-timing-function: steps(1);
+
+        }
+
+        .animated-text span{
+            position: relative;
+            color: orange;
+            display: block;
+            text-align: left;
+        }
+
+        .animated-text span:after{
+            content: "";
+            position: absolute;
+            left: 0;
+            height: 100%;
+            border-left: 2px solid orange;
+            right: -2px;
+            background-color: #009090;
+            animation: 3s texttype;
+            animation-iteration-count: infinite;
+            animation-timing-function: steps(10);
+        }
+
+        @keyframes texttype{
+            0%{
+                left: 0;
+
+            }
+
+            50%{
+                left: 100%;
+            }
+
+            100%{
+                left: 0;
+            }
+        }
+
+        @keyframes wordchange{
+            0%{
+                margin-top: 0;
+            }
+            33.333%{
+                margin-top: -95px;
+            }
+            66.666%{
+                margin-top: -190px;
+            }
+            100%{
+                margin-top: 0;
+            }
+        }
+
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="hero">
+        <div class="text-box">
+            <div class="fixed-text">I'm a</div>
+            <div class="animated-text">
+                <div>
+                    <span>Designer</span>
+                    <span>Developer</span>
+                    <span>Youtuber</span>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    
+</body>
+</html>

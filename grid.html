@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 1px solid red;
+        }
+
+        @font-face {
+            font-family: monts;
+            src: url(/fonts/Poppins-Regular.ttf);
+        }
+
+        .grid{
+            display: grid;
+            grid-template-areas: 
+                'box1 box1 two'
+                'box1 box1 three';
+            height: 350px;
+            grid-gap: 10px;
+        }
+
+        .grid2{
+            display: grid;
+            grid-template-areas:
+                'alpha alpha pi'
+                'beta gamma pi';
+            height: 400px;
+            grid-gap: 10px;
+            margin-top: 10px;
+        }
+
+        .grid3{
+            display: grid;
+            grid-template-areas: 
+                'on on tw thr'
+                'fo fiv fiv thr';
+                height: 500px;
+                grid-gap: 10px;
+                margin-top: 10px;
+
+        }
+
+        .one{
+            grid-area: box1;
+        }
+        .two{
+            grid-area: two;
+        }
+        .three{
+            grid-area: three;
+        }
+
+        .alpha{
+            grid-area: alpha;
+            background-color: #ddd;
+        }
+
+        .beta{
+            grid-area: beta;
+            background-color: #ddd;
+
+        }
+
+        .gamma{
+            grid-area: gamma;
+            background-color: #ddd;
+        }
+
+        .pi{
+            grid-area: pi;
+            background-color: #ddd;
+        }
+
+        .on{
+            grid-area: on;
+        }
+
+        .tw{
+            grid-area: tw;
+        }
+
+        .thr{
+            grid-area: thr;
+        }
+
+        .fo{
+            grid-area: fo;
+        }
+
+        .fiv{
+            grid-area: fiv;
+        }
+
+        ul{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 2rem;
+            list-style: none;
+            margin: 0;
+            width: 95%;
+            margin: 10px auto ;
+            padding: 0;
+            border: none;
+            font-family: monts;
+            
+        }
+   
+        
+        a{
+            display: block;
+            padding: 8px;
+            /* border: none; */
+            text-align: center;
+            background-color: #ddd;
+            color: #000;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+            /* font-family: monts; */
+            border-radius: 5px;
+            transition: 400ms ease-in-out;
+            
+
+        }
+
+        a:hover{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box one"></div>
+        <div class="box two"></div>
+        <div class="box three"></div>
+    </div>
+
+    <div class="grid2">
+        <div class="boxes alpha">
+            <h1>OUR CLASSES</h1>
+        </div>
+        <div class="boxes beta"></div>
+        <div class="boxes  gamma"></div>
+        <div class="boxes pi"></div>
+    </div>
+
+    <div class="grid3">
+        <div class="on"></div>
+        <div class="tw"></div>
+        <div class="thr"></div>
+        <div class="fo"></div>
+        <div class="fiv"></div>
+    </div>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Blog</a></li>
+    </ul>
+
+  
+</body>
+</html>

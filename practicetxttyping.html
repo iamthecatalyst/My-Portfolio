@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        @font-face {
+            font-family: poppins;
+            src: url(/fonts/Poppins-Regular.ttf);
+        }
+
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: poppins;
+        }
+
+        body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        .Front{
+            color: orange;
+            /* margin: 10px 0;  */
+            min-height: 20px;
+            display: flex;    
+            /* justify-content: center; */
+            /* align-items: center; */
+            border: 2px solid orange;
+            background: rgb(63, 61, 61);
+        }
+
+        .Front .static-txt{
+            color: #fff;
+            font-size: 60px;
+            font-weight: 300;
+        }
+
+        .Front .dynamic-txts{
+            margin-left: 10px;
+            line-height: 90px;
+            height: 90px;
+            /* background-color: orangered; */
+            /* overflow: hidden; */
+
+
+        }
+
+        .dynamic-txts li{
+            color: orange;
+            list-style: none;
+            font-size: 60px;
+            font-weight: 400;
+            position: relative; 
+            animation: slide 10s steps(4) infinite;
+        }
+
+        @keyframes slide{
+            100%{
+                top: -360px;
+            }
+        }
+
+        .dynamic-txts li{
+            position: relative;
+        }
+
+        .dynamic-txts li::after{
+            content: "";
+            left: 0;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: rgb(63, 61, 61);
+            border-left: 2px solid orange;
+            animation: typing 3s steps(10) infinite;
+            
+        }
+
+        @keyframes typing{
+            40%,
+            60%{
+                left: calc(100% + 30px);
+            }
+            100%{
+                left: 0;
+
+            }
+        }
+
+
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="Front">
+        <div class="static-txt">I'm a</div>
+        <ul class="dynamic-txts">
+            <li><span>Front-End Web Developer</span></li>
+            <li><span>Freelancer</span></li>
+            <li><span>Designer</span></li>
+            <li><span>E-commerce Developer</span></li>
+        </ul>
+        
+
+
+    </div>
+
+
+    
+</body>
+</html>

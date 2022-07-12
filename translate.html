@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform translate</title>
+
+    <style>
+        @font-face {
+            font-family: mont;
+            src: url(/fonts/Montserrat-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: monts;
+            src: url(/fonts/Montserrat-Bold.ttf);
+        }
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: mont;  
+            text-decoration: none;  
+            list-style: none;
+            /* border: 2px solid red; */
+        }
+
+        .container{
+            max-width: 1200px;
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            border: 2px solid green;
+        }
+
+        .container > div{
+            border: 2px solid red;
+            width: 350px;
+            padding: 2rem;
+            text-align: center;
+
+        }
+
+        .push{
+            transform: translateY(50%);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box push">
+            <h2>Box</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eius accusamus repudiandae amet pariatur soluta nam possimus at labore similique.</p>
+        </div>
+        <div class="box">
+            <h2>Box</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eius accusamus repudiandae amet pariatur soluta nam possimus at labore similique.</p>
+        </div>
+        <div class="box push">
+            <h2>Box</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eius accusamus repudiandae amet pariatur soluta nam possimus at labore similique.</p>
+        </div>
+        <div class="box">
+            <h2>Box</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eius accusamus repudiandae amet pariatur soluta nam possimus at labore similique.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

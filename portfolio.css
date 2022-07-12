@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+nav{
+    height: 400px;
+    color: black;
+}
+
+img{
+    max-width: 100%;
+}

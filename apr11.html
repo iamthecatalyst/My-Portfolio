@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today Practice</title>
+
+    <style>
+        *{
+            padding: none;
+            margin: none;
+            box-sizing: border-box;
+            /* border: 2px solid red; */
+            text-decoration: none;
+            list-style: none;
+        }
+
+        ul{
+            display: flex;
+            flex-direction: column;
+        }
+
+        li{
+            margin: 8px;
+        }
+
+        .boxes{
+            display: grid;
+            /* border: 2px solid red; */
+            grid-template-areas:
+                'box1 box2 box2 box3'
+                'box8 box4 box4 box6'
+                'box8 box5 box5 box6';
+            height: 600px;
+            grid-gap: 10px;
+            color: white;
+            grid-template-columns: 25% auto 30%;
+            
+        }
+
+        .box1{
+            grid-area: box1;
+            /* border: 2px solid red; */
+            background-color: rgb(95, 91, 91);
+            color: white;
+            border-radius: 10px;
+        }
+        .box2{
+            grid-area: box2;
+            /* border: 2px solid red; */
+            background-color: blue;
+            color: white;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        .box3{
+            grid-area: box3;
+            /* border: 2px solid red; */
+            background-color: rgb(95, 91, 91);
+            color: white;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        .box4{
+            grid-area: box4;
+            /* border: 2px solid red; */
+            background-color: blue;
+            color: white;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        .box5{
+            grid-area: box5;
+            /* border: 2px solid red; */
+            background-color: blue;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        .box6{
+            grid-area: box6;
+            /* border: 2px solid red; */
+            background-color: rgb(95, 91, 91);
+            padding: 5px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+    <div class="boxes">
+        <div class="box1">
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Support</li>
+                    <li>News</li>
+                    <li>Affiliates</li>
+                    <li>Info</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="box2">
+            <h3>Life is Simple</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error illum dolorum laboriosam dicta ipsa cupiditate provident non exercitationem dolorem ipsam sequi atque ipsum asperiores eos architecto voluptates, voluptatum natus itaque vero expedita! Hic quas non assumenda eligendi cupiditate fugit eum, autem deserunt laborum fugiat aspernatur ut. Iste labore veniam accusamus.</p>
+        </div>
+        <div class="box3">
+            <h3>Right column article</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molestias officiis voluptatum a consequuntur obcaecati sint unde? Consequuntur magnam nam dolore dignissimos consectetur illo similique repudiandae tenetur quasi? Aut, quam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iure aliquid nobis ipsum nam consectetur debitis qui excepturi neque perspiciatis.</p>
+        </div>
+        <div class="box4">
+            <h3>Just some Lorem Ipsum text</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad dolorem dolore officiis nostrum quam. Molestiae nihil voluptatum facilis numquam. Laboriosam possimus est debitis aut, fuga dolores amet, totam suscipit maxime odio ad nulla eius rem beatae consectetur ab, vitae saepe id? Molestias labore quam nisi fugit numquam voluptas cupiditate perspiciatis!</p>
+        </div>
+        <div class="box5">
+            <h3>Lorem ipsum strikes back</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eos repellat provident. Delectus praesentium ipsum qui beatae ipsam minus deserunt consequuntur porro molestiae, fugiat esse consequatur eligendi doloremque nisi laboriosam quasi magnam atque incidunt! Cumque nobis aspernatur dolorem eos est porro veritatis excepturi quos? Corrupti neque odit error explicabo? Doloribus!</p>
+        </div>
+        <div class="box6">
+            <h3>Another right column</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, illum. Ipsum fugit obcaecati doloribus consequuntur perspiciatis voluptas, aliquid libero perferendis voluptate labore impedit incidunt illo. Numquam fugit repellat dolore, voluptas adipisci, ipsam modi commodi ipsum ratione recusandae eum dolores et magni, odit impedit quibusdam suscipit id soluta. Facilis, fugit atque?</p>
+        </div>
+    </div>
+    
+</body>
+</html>
